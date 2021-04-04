@@ -49,7 +49,7 @@ bool CHARACTER_MANAGER::InitializeBanners()
 bool CHARACTER_MANAGER::SpawnBanners(int iEnable, const char* c_szBannerName)
 {
 	if (!m_bIsLoadedBanners)
-		return false;
+		InitializeBanners();
 
 	bool bDestroy = true;
 	bool bSpawn = false;
