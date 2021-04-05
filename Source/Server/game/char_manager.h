@@ -1,8 +1,8 @@
 /// 1.
 // Search
-typedef std::map<DWORD, CHARACTER_SET> pkCharRaceSet;
+class CHARACTER_MANAGER : public singleton<CHARACTER_MANAGER>
 
-// Add below
+// Add above
 #if defined(__EVENT_BANNER_FLAG__)
 typedef std::map<DWORD, std::string> BannerMapType;
 #endif
